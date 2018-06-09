@@ -1,0 +1,36 @@
+.body { padding-top: 70px; 
+text-align:right;
+}
+
+.peter { padding-top: 70px; 
+text-align:center;
+}
+
+.button1 {text-align:center;
+width:300px;
+font-size:300%;
+}
+
+h5 {text-align:center;
+font-size: 5 em;
+color : #0000FF;
+}
+
+.Computer {margin-left: 100em;
+}
+
+.button {  width:300px; text-align:center;
+           font-family:System,sans-serif;
+           font-size:300%;
+ }
+.display { width:100%; text-align:right;
+           font-family:System,sans-serif;
+           font-size:300%;
+ }
+.Rechner { width:300%; text-align:left;
+           font-family:System,sans-serif;
+           font-size:100%;
+margin-left: 5em; }
+
+
+ 
