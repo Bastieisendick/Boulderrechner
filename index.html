@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=320, initial-scale=1" />
+    <meta name="Boulder Cup Rechner" content="Boulder Cup Rechner" />
+    <title>Boulder Cup Rechner</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style_1.css" rel="stylesheet">
+	<link href="style_2.css" rel="stylesheet">
+<link href="functions.js" type="text/javascript"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap_etc./bootstrap.css">
+  <script src="bootstrap_etc/bootstrap_1.js"></script>
+  <script src="bootstrap_etc/bootstrap_2.js"></script>
+<script type="text/javascript" src="functions.js"></script>
+<script type="text/javascript" src="Cookies.js"></script>
+
+
+</head>
+  <body onload="lad()">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://jdav.spinel.de/events.php?unset=1" target="_blank"><strong><font style="color: LimeGreen;">JDAV Gruppentool</font></strong></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html"><strong>Boulder Cup Rechner</strong></a></li>
+      <li><a href="boulder_bewertungen.html"><strong>Boulder Bewertungen</strong></a>
+	  </li>
+	  </ul>
+	  <div class="dropdown" style="float:right;">
+  <button type="button" class="btn btn-primary btn-lg" class="dropbtn">Men&uuml;</button>
+  <div class="dropdown-content">
+  <button onClick="rotbg()">Rot</button>
+<button onClick="gruenbg()">Gruen</button>
+<button onClick="blaubg()">Blau</button>
+<button onClick="graubg()">Grau</button>
+<button onClick="speicherCookie()">Speichern</button>
+    
+  </div>
+</div>
+      
+    
+  </div>
+</nav>
+
+<div class:".col-xs-12 .col-sm-6 .col-lg-8">
+<h5><FONT SIZE="7" face="Impact"><strong>Boulder Cup Rechner</strong></font></h5>
+</div>
+<div class ="JDAV_LOGO">
+<div class=".col-xs-6 .col-lg-4">
+<img src="bilder/Logo.jpg" width="200px"></img>
+</div>
+</div>
+
+
+<!--Hier beginnt der 1. Rechner--> 
+ 
+
+ <form name="Rechner_1" action="" onSubmit="Ergebnis();return false;">
+ <div id="Rechner_1">
+<table border="5" cellpadding="9" cellspacing="0">
+</div>
+ <tr>
+ <td bgcolor="#C0C0C0">
+ <input type="text" name="Display1" align="right" id="display1">     
+
+</td><div id="Boulder_Island_Schrift">     
+<h1><strong>Boulder Island Rechner</strong></h1>
+</div>
+ </tr><tr>
+ <td  bgcolor="#C0 C0 C0">
+ <table border="0" cellpadding="0" cellspacing="2">
+ <tr>
+ <td bgcolor="#FF 00 00"><input type="button" width="60" class="button_Rot1" value= "  Rot  "  onClick="rotbi()"></td> 
+<td bgcolor="#FF FF FF"><input type="button" width="60" class="button_Weiss1" value="  Wei&szlig;   " onClick="weissbi()"></td>
+<td bgcolor="#"><input type="button" width="60" class="button" value="  =   " onClick="Ergebnis()"></td>
+ </tr>
+ <tr>
+ <td bgcolor="#00 80 00"><input type="button" width="60" class="button_Gruen1" value="  Gr&uuml;n   " onClick="gruenbi()"></td>
+ <td bgcolor="#FF FF 00"><input type="button" width="60" class="button_Gelb1" value="  Gelb   " onClick="gelbbi()"></td>
+ <td bgcolor="#"><input type="button" width="60" class="button" value="  +   " onClick="Hinzufuegen1('+')"></td>
+ </tr>
+<tr>
+ <td bgcolor="#FF A5 00"><input type="button" width="60" class="button_Orange1" value="  Orange   " onClick="orangebi()"></td>
+ <td bgcolor="#00 00 FF"><input type="button" width="60" class="button_Blau1" value="  Blau   " onClick="blaubi()"></td>
+  <td bgcolor="#"><input type="reset"  width="60" class="button_Loeschen1" value="  L&ouml;schen  "></td>
+</tr>
+ <tr>
+<td bgcolor="#00 00 00"><input type="button" width="60" class="button_Schwarz1" value="  Schwarz   " onClick="schwarzbi()"></td>
+ <td bgcolor="#80 00 80"><input type="button" width="60" class="button_Lila1" value="  Lila   " onClick="lilabi()"></td>
+ <td bgcolor="#EE 82 EE"><input type="button" width="60" class="button_Pink1" value="  Pink   " onClick="Hinzufuegen3('y')"></td>
+ </tr>
+
+
+
+</table>
+</td></tr></table>
+</form>
+</div>
+
+
+
+
+<!--Hier beginnt der 2. Rechner-->
+
+<form name="Rechner_2" action="" onSubmit="Ergebnis_();return false;">
+ <div id="Rechner_2">
+<table border="5" cellpadding="9" cellspacing="0">
+</div>
+ <tr>
+ <td bgcolor="#C0C0C0">
+ <input type="text" name="Display2" align="right" id="display2">
+</td>
+<div id="Boulderhaus_Mannheim_Schrift">     
+<h1><strong>Boulderhaus Mannheim Rechner</strong></h1>
+</div>
+ </tr><tr>
+ <td  bgcolor="C0C0C0">
+ <table border="0" cellpadding="0" cellspacing="2">
+ <tr>
+ <td bgcolor="#FF FF 00"><input type="button" width="60" class="button_Gelb1" value= "  Gelb  "  onClick="Hinzufuegen2('2')"></td> 
+<td bgcolor="#FF FF FF"><input type="button" width="60" class="button_Weiss1" value="  Wei&szlig;   " onClick="Hinzufuegen2('4')"></td>
+ <td bgcolor="#"><input type="button" width="60" class="button" value="  =   " onClick="Ergebnis_()"></td>
+ </tr>
+ <tr>
+ <td bgcolor="#00 80 00"><input type="button" width="60" class="button_Gruen1" value="  Gr&uuml;n   " onClick="Hinzufuegen2('7')"></td>
+ <td bgcolor="#00 00 FF"><input type="button" width="60" class="button_Blau1" value="  Blau   " onClick="Hinzufuegen2('15')"></td>
+<td bgcolor="#"><input type="button" width="60" class="button" value="  +   " onClick="Hinzufuegen2('+')"></td>
+ </tr>
+<tr>
+ <td bgcolor="#FF 00 00"><input type="button" width="60" class="button_Rot1" value="  Rot   " onClick="Hinzufuegen2('25')"></td>
+ <td bgcolor="#00 00 00"><input type="button" width="60" class="button_Schwarz1" value="  Schwarz   " onClick="Hinzufuegen2('40')"></td>
+  <td bgcolor="#"><input type="reset"  width="150" class="button_Loeschen1" value="  L&ouml;schen  "></td>
+</tr>
+
+
+
+
+</table>
+</td></tr></table>
+</form>
+
+
+
+<div id="E-mail_btn">
+<a href="mailto:Boulder_Cup_Rechner@gmx.de?subject=Feedback%20zum%20Boulder%20Cup%20Rechner&body=Hallo%20Boulder%20Cup%20Rechner%20Team,
+%20Ich%20habe%20ein%20paar%20Verbesserungsvorschl%C3%A4ge%20f%C3%BCr%20den%20Boulder%20Cup%20Rechner:"><abbr title="E-mail an Boulder Cup Rechner Team schreiben"><button type="button" class="btn btn-sucess btn btn-primary btn-lg">Feedback zum Boulder Cup Rechner</button></abbr></a>
+</div>
+
+           
+
+            
+   </div>
+  </body>
+</html>

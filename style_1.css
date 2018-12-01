@@ -1,0 +1,147 @@
+.body { padding-top: 70px; 
+text-align:right;
+
+
+}
+
+
+h5 {text-align:center;
+font-size: 5 em;
+}
+
+.JDAV_LOGO{margin-left: 115em;
+margin-top:1em;
+}
+
+
+
+
+#Boulder_Island_Schrift{margin-left: 10em;
+color: Gold;
+ 
+}
+
+#display1 { width:100%; text-align:right;
+           font-family:System,sans-serif;
+           font-size:300%;
+           color:Blue;
+
+ }
+
+#Rechner_1 { width:300%; text-align:left;
+           font-family:System,sans-serif;
+           font-size:100%;
+margin-left: 33em; 
+}
+
+
+#Boulderhaus_Mannheim_Schrift{margin-left: 10em;
+color: Black;
+ 
+}
+
+
+#display2 { width:100%; text-align:right;
+           font-family:System,sans-serif;
+           font-size:300%;
+           color:Blue;
+
+ }
+
+#Rechner_2{ width:300%; text-align:left;
+           font-family:System,sans-serif;
+           font-size:100%;
+margin-left: 33em;
+margin-top:20em;
+color:;
+ }
+
+
+
+
+
+
+.button_Loeschen1 {text-align:center;
+width:300px;
+font-size:300%;
+color: #B22222;
+}
+
+
+.button_Rot1 {text-align:center;
+width:300px;
+font-size:300%;
+color: #FF0000;
+}
+
+.button_Weiss1 {text-align:center;
+width:300px;
+font-size:300%;
+color: #FFFFFF;
+}
+
+.button_Gruen1 {text-align:center;
+width:300px;
+font-size:300%;
+color: #008000;
+}
+
+.button_Gelb1 {text-align:center;
+width:300px;
+font-size:300%;
+color: #FFFF00;
+}
+
+.button_Orange1 {text-align:center;
+width:300px;
+font-size:300%;
+color: #FFA500;
+}
+
+.button_Blau1 {text-align:center;
+width:300px;
+font-size:300%;
+color: #0000FF;
+}
+
+.button_Schwarz1 {text-align:center;
+width:300px;
+font-size:300%;
+color: #000000;
+}
+
+.button_Lila1 {text-align:center;
+width:300px;
+font-size:300%;
+color: #800080;
+}
+.button_Pink1 {text-align:center;
+width:300px;
+font-size:300%;
+color: #EE82EE;
+}
+
+.button {  width:300px;
+ text-align:center;
+           font-family:System,sans-serif;
+           font-size:300%;
+ }
+
+
+
+
+#E-mail_btn{margin-bottom: 10em;
+margin-top: 10em;
+margin-right: 10em; 
+color: 000000;
+}
+
+
+ 
+
+
+
+
+
+
+

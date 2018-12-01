@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Boulder Cup Rechner Farben" content="Boulder Cup Rechner Farben" />
+    <title>Boulder-Cup Rechner</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style_1.css" rel="stylesheet">
+	<link href="style_2.css" rel="stylesheet">
+<link href="functions.js" type="text/javascript"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap_etc./bootstrap.css">
+  <script src="bootstrap_etc/bootstrap_1.js"></script>
+  <script src="bootstrap_etc/bootstrap_2.js"></script>
+<script type="text/javascript" src="functions.js"></script>
+<script type="text/javascript" src="Cookies.js"></script>
+</head>
+<body onload="lad()">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://jdav.spinel.de/events.php?unset=1" target="_blank"><strong><font style="color: LimeGreen;">JDAV Gruppentool</font></strong></a>
+    </div>
+    <ul class="nav navbar-nav">
+
+      <li><a href="index.html"><strong>Boulder cup Rechner</strong></a></li>
+      <li class="active"><a href="boulder_bewertungen.html"><strong>Boulder Bewertungen</strong></a></li>
+    </ul>
+	<div class="dropdown" style="float:right;">
+  <button type="button" class="btn btn-primary btn-lg" class="dropbtn">Men&uuml;</button>
+  <div class="dropdown-content">
+  <button onClick="rotbg()">Rot</button>
+<button onClick="gruenbg()">Gruen</button>
+<button onClick="blaubg()">Blau</button>
+<button onClick="graubg()">Grau</button>
+<button onClick="speicherCookie()">Speichern</button>
+    
+  </div>
+</div>
+  </div>
+</nav>
+<div id="Überschrift">
+<h5><FONT SIZE="7" face="Impact"><strong>Boulder Bewertungen</strong></font></h5>
+</div>
+
+
+<div id="h1">
+<h1><strong>Boulder Island</strong></h1>
+</div>
+
+
+<div id="BilderContainer_1">
+<div class="col-xs-6 col-sm-3">
+           <img src="bilder/Griff_Rot.jpg"width="100px" onClick="schieberwert(2,1,25,'griffrotbi')"/>
+           <div class="Bilduntertitel">
+            <p>Locker = 2 Punkte</p></div>
+           <img src="bilder/Griff_Orange.jpg"width="100px" onClick="schieberwert(17,1,60,'grifforangebi')"/>
+           <div class="Bilduntertitel">
+            <p>Happig = 17 Punkte</p></div>
+           <img src="bilder/Griff_Pink.jpg"width="100px"/>
+           <div class="Bilduntertitel">
+            <p>&Uuml;berraschung = &Uuml;berraschung</p></div>
+           </div>
+
+
+<div class="col-xs-6 col-sm-3">
+           <img src="bilder/Griff_Weiss.jpg"width="100x" onClick="schieberwert(3,1,25,'griffweissbi')"/>
+           <div class="Bilduntertitel">
+            <p>Entspannt = 3 Punkte</p></div>
+           <img src="bilder/Griff_Blau.jpg"width="100px" onClick="schieberwert(25,1,65,'griffblaubi')"/> 
+           <div class="Bilduntertitel">      
+            <p>Schwer = 25 Punkte</p></div>
+           </div>
+           
+
+           
+<div class="col-xs-6 col-sm-3">
+           <img src="bilder/Griff_Gruen.jpg"width="100px" onClick="schieberwert(10,1,40,'griffgruenbi')"/>
+           <div class="Bilduntertitel">
+            <p>Geschmeidig = 10 Punkte</p></div>
+           <img src="bilder/Griff_Schwarz.jpg"width="100px" onClick="schieberwert(35,1,80,'griffschwarzbi')"/>
+           <div class="Bilduntertitel">
+            <p>Sauschwer = 35 Punkte</p></div>
+           </div>
+           
+           
+
+<div class="col-xs-6 col-sm-3">
+           <img src="bilder/Griff_Gelb.jpg"width="100px" onClick="schieberwert(13,1,40,'griffgelbbi')"/>
+           <div class="Bilduntertitel">
+            <p>Knifflig = 10 Punkte</p></div>
+           
+           <img src="bilder/Griff_Lila.jpg"width="100px" onClick="schieberwert(50,1,100,'grifflilabi')"/>
+           <div class="Bilduntertitel">
+             <p>Bretthart = 50 Punte</p></div>
+			 <div id="Schieberegler"></div>
+			 <p id="ergebnis"></p>
+           </div>
+</div>
+
+
+
+
+<div id="h2">
+<h1><strong>Boulderhaus Mannheim</strong></h1>
+
+</div>
+</div>
+
+
+<div id="BilderContainer_1">
+<div class="col-xs-6 col-sm-4">
+ <img src="bilder/Griff_Gelb.jpg"width="100px"/>
+           <div class="Bilduntertitel">
+            <p>Easy = 2 Punkte</p></div>
+<img src="bilder/Griff_Blau.jpg"width="100px"/> 
+           <div class="Bilduntertitel">      
+            <p>Anspruchsvoll = 15 Punkte</p></div>
+
+</div>
+
+<div class="col-xs-6 col-sm-4">
+<img src="bilder/Griff_Weiss.jpg"width="100x"/>
+           <div class="Bilduntertitel">
+            <p> Bequem= 4 Punkte</p></div>
+<img src="bilder/Griff_Rot.jpg"width="100px"/>
+           <div class="Bilduntertitel">
+            <p>Hammerhart =25 Punkte</p></div>
+
+</div>
+
+<div class="col-xs-6 col-sm-4">
+<img src="bilder/Griff_Gruen.jpg"width="100px"/>
+           <div class="Bilduntertitel">
+            <p>Etwas schwieriger = 7 Punkte</p></div>
+<img src="bilder/Griff_Schwarz.jpg"width="100px"/>
+           <div class="Bilduntertitel">
+            <p>Extrem schwer = 40 Punkte</p></div>
+</div>
+</div>
+
+
+
+
+
+           
+  </body>
+</html>
